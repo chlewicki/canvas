@@ -1,0 +1,47 @@
+body, h1, .list{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body{
+	overflow: hidden;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	font-size: 2vw;
+	user-select: none;
+	-moz-user-select: none;
+}
+canvas{
+	z-index: 1;
+}
+h1, .list{
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	text-align: center;
+}
+h1{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.list{
+	top: 0;
+	font-size: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	cursor: pointer;
+	padding: 1vw;
+	margin: 0 1vw;
+	color: #000;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+a:hover{
+	color: #fff;
+	text-decoration: underline;
+	background-color: #333;
+	border-radius: 50px;
+}
